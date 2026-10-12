@@ -1,0 +1,37 @@
+<main>
+
+  <h1>
+    {{ 'home.title' | translate }}
+  </h1>
+
+  <p>
+    {{ 'home.subtitle' | translate }}
+  </p>
+
+  <h2>
+    {{ 'home.my-energy-reports' | translate }}
+  </h2>
+
+  @if (reports().length === 0) {
+
+    <p>
+      {{ 'home.empty' | translate }}
+    </p>
+
+  } @else {
+
+    <section class="reports-grid">
+
+      @for (report of reports(); track report.id) {
+
+        <app-energy-report-summary
+          [report]="report"
+        />
+
+      }
+
+    </section>
+
+  }
+
+</main>

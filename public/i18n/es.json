@@ -1,0 +1,35 @@
+{
+  "toolbar": {
+    "home": "Inicio",
+    "new-energy-report": "Nuevo Reporte de Energía"
+  },
+  "home": {
+    "title": "Inicio",
+    "subtitle": "Monitoreo Internacional de Energía.",
+    "my-energy-reports": "Mis Reportes de Energía",
+    "empty": "Vacío"
+  },
+  "report": {
+    "energy-type": "Tipo de Energía",
+    "consumption": "Consumo de Energía",
+    "production": "Producción de Energía",
+    "year": "Año",
+    "registered-at": "Registrado el"
+  },
+  "new-report": {
+    "title": "Nuevo Reporte de Energía",
+    "subtitle": "Registrar Reportes Internacionales de Energía",
+    "energy-type": "Tipo de Energía",
+    "regional-operator": "Operador Regional",
+    "energy-region": "Región de Energía",
+    "create": "Crear",
+    "cancel": "Cancelar",
+    "required-energy-type": "El tipo de energía es obligatorio",
+    "required-operator": "El operador regional es obligatorio"
+  },
+  "not-found": {
+    "title": "Página No Encontrada",
+    "message": "La ruta solicitada no fue encontrada.",
+    "home": "Ir al Inicio"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "toolbar": {
+    "home": "Home",
+    "new-energy-report": "New Energy Report"
+  },
+  "home": {
+    "title": "Home",
+    "subtitle": "International Energy Monitoring.",
+    "my-energy-reports": "My Energy Reports",
+    "empty": "Empty"
+  },
+  "report": {
+    "energy-type": "Energy Type",
+    "consumption": "Energy Consumption",
+    "production": "Energy Production",
+    "year": "Year",
+    "registered-at": "Registered At"
+  },
+  "new-report": {
+    "title": "New Energy Report",
+    "subtitle": "Register International Energy Reports",
+    "energy-type": "Energy Type",
+    "regional-operator": "Regional Operator",
+    "energy-region": "Energy Region",
+    "create": "Create",
+    "cancel": "Cancel",
+    "required-energy-type": "Energy Type is required",
+    "required-operator": "Regional Operator is required"
+  },
+  "not-found": {
+    "title": "Page Not Found",
+    "message": "The requested route was not found.",
+    "home": "Go to Home"
+  }
+}

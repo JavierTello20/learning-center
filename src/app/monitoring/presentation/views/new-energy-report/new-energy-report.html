@@ -1,0 +1,150 @@
+<main>
+
+  <h1>
+    {{ 'new-report.title' | translate }}
+  </h1>
+
+  <p>
+    {{ 'new-report.subtitle' | translate }}
+  </p>
+
+
+  <form
+    [formGroup]="form"
+    (ngSubmit)="submit()">
+
+
+    <mat-form-field appearance="outline">
+
+      <mat-label>
+        {{ 'new-report.energy-type' | translate }}
+      </mat-label>
+
+      <mat-select
+        formControlName="energyType"
+        aria-label="Energy Type">
+
+        @for (
+          type of energyTypes;
+          track type
+          ) {
+
+          <mat-option [value]="type">
+            {{ type }}
+          </mat-option>
+
+        }
+
+      </mat-select>
+
+
+      @if (
+        form.controls.energyType.touched &&
+        form.controls.energyType.hasError('required')
+        ) {
+
+        <mat-error>
+          {{ 'new-report.required-energy-type' | translate }}
+        </mat-error>
+
+      }
+
+    </mat-form-field>
+
+
+    @if (
+      form.controls.energyType.value
+      ) {
+
+      <p>
+
+        <strong>
+          {{ 'new-report.energy-region' | translate }}:
+        </strong>
+
+        {{
+          getRegion(
+            form.controls.energyType.value
+          )
+        }}
+
+      </p>
+
+    }
+
+
+    <mat-form-field appearance="outline">
+
+      <mat-label>
+        {{ 'new-report.regional-operator' | translate }}
+      </mat-label>
+
+      <mat-select
+        formControlName="regionalOperatorId"
+        aria-label="Regional Operator">
+
+        @for (
+          operator of operators();
+          track operator.id
+          ) {
+
+          <mat-option
+            [value]="operator.id">
+
+            {{ operator.fullName }}
+
+          </mat-option>
+
+        }
+
+      </mat-select>
+
+
+      @if (
+        form.controls.regionalOperatorId.touched &&
+        form.controls.regionalOperatorId.hasError('required')
+        ) {
+
+        <mat-error>
+          {{ 'new-report.required-operator' | translate }}
+        </mat-error>
+
+      }
+
+    </mat-form-field>
+
+
+    @if (message()) {
+
+      <p>
+        {{ message() }}
+      </p>
+
+    }
+
+
+    <div class="actions">
+
+      <button
+        mat-raised-button
+        type="submit">
+
+        {{ 'new-report.create' | translate }}
+
+      </button>
+
+
+      <button
+        mat-button
+        type="button"
+        (click)="cancel()">
+
+        {{ 'new-report.cancel' | translate }}
+
+      </button>
+
+    </div>
+
+  </form>
+
+</main>

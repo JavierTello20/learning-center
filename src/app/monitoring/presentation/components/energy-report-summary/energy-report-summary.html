@@ -1,0 +1,64 @@
+<mat-card>
+
+  <mat-card-header>
+
+    <mat-card-title>
+      {{ report().countryName }}
+    </mat-card-title>
+
+  </mat-card-header>
+
+
+  <mat-card-content>
+
+    <p>
+      <strong>
+        {{ 'report.energy-type' | translate }}:
+      </strong>
+
+      {{ report().energyType }}
+    </p>
+
+
+    <p>
+      <strong>
+        {{ 'report.consumption' | translate }}:
+      </strong>
+
+      {{ report().consumption }}
+    </p>
+
+
+    <p>
+      <strong>
+        {{ 'report.production' | translate }}:
+      </strong>
+
+      {{ report().production }}
+    </p>
+
+  </mat-card-content>
+
+
+  <mat-card-footer>
+
+    <p>
+      <strong>
+        {{ 'report.year' | translate }}:
+      </strong>
+
+      {{ report().year }}
+    </p>
+
+
+    <p>
+      <strong>
+        {{ 'report.registered-at' | translate }}:
+      </strong>
+
+      {{ report().registeredAt | date:'medium' }}
+    </p>
+
+  </mat-card-footer>
+
+</mat-card>

@@ -1,0 +1,23 @@
+<main>
+
+  <h1>
+    {{ 'not-found.title' | translate }}
+  </h1>
+
+  <p>
+    {{ 'not-found.message' | translate }}
+  </p>
+
+  <p>
+    {{ invalidRoute }}
+  </p>
+
+  <a
+    mat-raised-button
+    routerLink="/home">
+
+    {{ 'not-found.home' | translate }}
+
+  </a>
+
+</main>

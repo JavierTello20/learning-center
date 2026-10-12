@@ -1,0 +1,44 @@
+<mat-toolbar>
+
+  <div class="brand">
+
+    <img
+      [src]="logoUrl"
+      alt="IEA logo"
+      width="40"
+      height="40"
+    />
+
+    <strong>
+      IEA Energy Monitoring Platform
+    </strong>
+
+  </div>
+
+
+  <span class="spacer"></span>
+
+
+  <a
+    mat-button
+    routerLink="/home"
+    aria-label="Navigate to Home">
+
+    {{ 'toolbar.home' | translate }}
+
+  </a>
+
+
+  <a
+    mat-button
+    routerLink="/energy-reports/new"
+    aria-label="Navigate to New Energy Report">
+
+    {{ 'toolbar.new-energy-report' | translate }}
+
+  </a>
+
+
+  <app-language-switcher />
+
+</mat-toolbar>

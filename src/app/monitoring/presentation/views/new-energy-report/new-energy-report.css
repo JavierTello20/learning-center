@@ -1,0 +1,15 @@
+main {
+  padding: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}

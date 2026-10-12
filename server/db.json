@@ -1,0 +1,168 @@
+{
+  "energy-monitoring-centers": [
+    {
+      "id": 1,
+      "name": "Solar Energy Monitoring Center",
+      "energyType": "solar"
+    },
+    {
+      "id": 2,
+      "name": "Wind Energy Monitoring Center",
+      "energyType": "wind"
+    },
+    {
+      "id": 3,
+      "name": "Hydro Energy Monitoring Center",
+      "energyType": "hydro"
+    },
+    {
+      "id": 4,
+      "name": "Nuclear Energy Monitoring Center",
+      "energyType": "nuclear"
+    },
+    {
+      "id": 5,
+      "name": "Gas Energy Monitoring Center",
+      "energyType": "gas"
+    },
+    {
+      "id": 6,
+      "name": "Oil Energy Monitoring Center",
+      "energyType": "oil"
+    }
+  ],
+  "energy-report-items": [
+    {
+      "id": 1,
+      "centerId": 1,
+      "energyType": "solar",
+      "countryCode": "US-CA",
+      "countryName": "United States",
+      "consumption": 1200,
+      "production": 1800,
+      "year": 2026,
+      "registeredAt": "2026-05-01T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "centerId": 1,
+      "energyType": "solar",
+      "countryCode": "US-AZ",
+      "countryName": "United States",
+      "consumption": 980,
+      "production": 1500,
+      "year": 2025,
+      "registeredAt": "2026-05-02T11:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "centerId": 2,
+      "energyType": "wind",
+      "countryCode": "US-TX",
+      "countryName": "United States",
+      "consumption": 900,
+      "production": 1400,
+      "year": 2026,
+      "registeredAt": "2026-05-03T09:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "centerId": 3,
+      "energyType": "hydro",
+      "countryCode": "US-WA",
+      "countryName": "United States",
+      "consumption": 1500,
+      "production": 2200,
+      "year": 2026,
+      "registeredAt": "2026-05-04T14:20:00.000Z"
+    },
+    {
+      "id": 5,
+      "centerId": 4,
+      "energyType": "nuclear",
+      "countryCode": "US-PA",
+      "countryName": "United States",
+      "consumption": 2500,
+      "production": 4200,
+      "year": 2026,
+      "registeredAt": "2026-05-05T08:45:00.000Z"
+    },
+    {
+      "id": 6,
+      "centerId": 5,
+      "energyType": "gas",
+      "countryCode": "US-LA",
+      "countryName": "United States",
+      "consumption": 1800,
+      "production": 2600,
+      "year": 2026,
+      "registeredAt": "2026-05-06T16:10:00.000Z"
+    },
+    {
+      "id": 7,
+      "centerId": 6,
+      "energyType": "oil",
+      "countryCode": "US-TX",
+      "countryName": "United States",
+      "consumption": 2100,
+      "production": 3100,
+      "year": 2026,
+      "registeredAt": "2026-05-07T12:00:00.000Z"
+    },
+    {
+      "centerId": 1,
+      "energyType": "solar",
+      "countryCode": "US-IL",
+      "countryName": "United States",
+      "consumption": 1200,
+      "production": 1800,
+      "year": 2026,
+      "registeredAt": "2026-10-12T21:33:24.267Z",
+      "id": 8
+    },
+    {
+      "centerId": 1,
+      "energyType": "solar",
+      "countryCode": "US-AL",
+      "countryName": "United States",
+      "consumption": 1200,
+      "production": 1800,
+      "year": 2026,
+      "registeredAt": "2026-10-12T21:33:53.904Z",
+      "id": 9
+    },
+    {
+      "centerId": 5,
+      "energyType": "gas",
+      "countryCode": "US-MS",
+      "countryName": "United States",
+      "consumption": 1800,
+      "production": 2600,
+      "year": 2026,
+      "registeredAt": "2026-10-12T21:36:16.762Z",
+      "id": 10
+    },
+    {
+      "centerId": 3,
+      "energyType": "hydro",
+      "countryCode": "US-PA",
+      "countryName": "United States",
+      "consumption": 1500,
+      "production": 2200,
+      "year": 2026,
+      "registeredAt": "2026-10-12T21:37:57.559Z",
+      "id": 11
+    },
+    {
+      "centerId": 6,
+      "energyType": "oil",
+      "countryCode": "US-WY",
+      "countryName": "United States",
+      "consumption": 2100,
+      "production": 3100,
+      "year": 2026,
+      "registeredAt": "2026-10-12T21:47:14.626Z",
+      "id": 12
+    }
+  ]
+}
